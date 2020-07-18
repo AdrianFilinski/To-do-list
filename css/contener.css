@@ -1,0 +1,23 @@
+.contener__section {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.contener {
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+.contener__form {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.contener__button {
+    justify-content: right;
+    background-color: teal;
+    color: white;
+    padding: 5px;
+}
