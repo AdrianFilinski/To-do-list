@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300&family=Roboto:wght@300;500&display=swap"
+        rel="stylesheet">
     <script defer src="js/script.js"></script>
 </head>
 
@@ -18,18 +20,18 @@
     <header class="header">
         <h1 class="header__class">Lista zadań</h1>
     </header>
-    <div class="contener">
+    <div class="contener__first">
         <section class="contener__section">
             <span class="contener__section--span">Dodaj nowe zadanie</span>
     </div>
-    <div class="contener">
+    <div class="contener__first">
         <form class="contener__form js-form">
-            <input class="js-newTask">
+            <input class="contener__form--input js-newTask" placeholder="Co jest do zrobienia?">
             <button class="contener__button">Dodaj zadanie</button>
         </form>
     </div>
     </section>
-    <div class="contener">
+    <div class="contener__second">
         <section class="contener__section">
             <span class="contener__section--span">Lista zadań</span>
             <ul class="js-tasks"></ul>

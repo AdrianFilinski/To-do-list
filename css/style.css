@@ -13,7 +13,6 @@ html {
     padding: 20px;
     justify-content: center;
     text-align: left;
-    
-    background-color: rgb(238, 236, 236)
+    background-color: rgb(238, 236, 236);
+    font-family: 'Montserrat', sans-serif;
 }
-
