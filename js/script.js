@@ -1,14 +1,5 @@
 {
-    const tasks = [
-        {
-            content: "przerobić tydzień 2",
-            done: false,
-        },
-        {
-            content: "przerobić rozdział 3",
-            done: true,
-        },
-    ];
+    const tasks = [];
 
     const removeTask = (taskIndex) => {
         tasks.splice(taskIndex, 1);
@@ -36,11 +27,12 @@
             htmlString += `
             <li${task.done ? " style=\"text-decoration: line-through\"" : ""}>
 
-            <button class="js-done">Zrobione?</button>
-            <button class="js-remove">usuń</button>
+            <button class="task__button--done js-done">✔️</button>
+            <button class="task__button--remove js-remove">🗑️</button>
             ${task.content}
             </li>
             `;
+            
         }
         document.querySelector(".js-tasks").innerHTML = htmlString;
 
@@ -60,7 +52,6 @@
             });
         });
     };
-
 
 
     const onFormSubmit = (event) => {
