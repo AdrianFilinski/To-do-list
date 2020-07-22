@@ -4,18 +4,28 @@
     box-shadow: 10px;
     border: 1px solid rgb(238, 236, 236);
     background-color: white;
-    margin-top: 15px;
+    margin-top: 30px 20px 0;
 }
 
+.section__item {
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    padding: 15px 0;
+    border-bottom: 1px solid #cccccc60;
+    font-weight: normal;
+}
 
 .section__list {
-    list-style: none;
-    display: grid;
-    grid-template-columns: 2;
+   margin: 10px 20px 0;
+   padding: 25px 25px 10px;
 }
 
 .section__header {
     font-weight: bold;
+    margin-left: 10px;
+    padding: 10px;
+    border-bottom: 2px solid #cccccc60;
 }
 
 .section__span--done{
@@ -23,7 +33,3 @@
     color: red;
 }
 
-.section__span {
-    padding: 10px;
-    flex-shrink: 1;
-}
