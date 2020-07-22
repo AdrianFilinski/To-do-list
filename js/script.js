@@ -25,14 +25,13 @@
 
         for (const task of tasks) {
             htmlString += `
-            <li${task.done ? " style=\"text-decoration: line-through\"" : ""}>
-
-            <button class="task__button--done js-done">✔️</button>
-            <button class="task__button--remove js-remove">🗑️</button>
-            ${task.content}
+            <li class ="section__item js--task">
+            <button class="task__button task__button--done js-toggleDone">${task.done ? "✔️": "X"}</button>
+            <span class="section__span ${task.done ? "section__span--done" : ""}"> ${task.content}</span>
+            <button class="task__button task__button--remove js-remove">🗑️</button>
             </li>
             `;
-            
+
         }
         document.querySelector(".js-tasks").innerHTML = htmlString;
 
@@ -44,10 +43,10 @@
                 removeTask(index);
             });
         });
-        const toggleDoneButtons = document.querySelectorAll(".js-done");
+        const toggleDoneButtons = document.querySelectorAll(".js-toggleDone");
 
-        toggleDoneButtons.forEach((toggleDoneButton, index) => {
-            toggleDoneButton.addEventListener("click", () => {
+        toggleDoneButtons.forEach((toggleDoneButtons, index) => {
+            toggleDoneButtons.addEventListener("click", () => {
                 toggleTaskDone(index);
             });
         });
@@ -57,13 +56,15 @@
     const onFormSubmit = (event) => {
         event.preventDefault();
 
-        const newTaskContent = document.querySelector(".js-newTask").value.trim();
+        const newTaskContent = document.querySelector(".js-input");
+        const newTask = newTaskContent.value.trim();
 
-        if (newTaskContent === "") {
-            return;
+        if (newTask !== "") {
+            addNewTask(newTask);
+            newTaskContent.value = "";
         }
 
-        addNewTask(newTaskContent);
+        newTaskContent.focus();
 
     };
 

@@ -6,13 +6,20 @@ html {
     box-sizing: inherit;
 }
 
-.style {
+
+.body{
     width: 100%;
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     justify-content: center;
     text-align: left;
     background-color: rgb(238, 236, 236);
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;    
+}
+
+@media (min-width: 767px) {
+    .body {
+        width: 50%;
+    }
 }
