@@ -8,6 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/contener.css" rel="stylesheet">
     <link href="css/task.css" rel="stylesheet">
+    <link href="css/section.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" />
@@ -17,25 +18,20 @@
     <script defer src="js/script.js"></script>
 </head>
 
-<body class="body">
-    <header class="header">
-        <h1>Lista zadań</h1>
-    </header>
+<body>
+    <h1>To do list</h1>
+        <section class="section">
+            <header class="section__header">Add new task</header>
     <div class="contener__first">
-        <section class="contener__section">
-            <span class="contener__section--span">Dodaj nowe zadanie</span>
-    </div>
-    <div class="contener__first">
-        <form class="contener__form js-form">
-            <input class="contener__form--input js-newTask" placeholder="Co jest do zrobienia?">
-            <button class="contener__button">Dodaj zadanie</button>
+        <form class="container__form js-form">
+            <input class="container__form--input js-input" placeholder="Co jest do zrobienia?">
+            <button class="container__button">Add task</button>
         </form>
     </div>
     </section>
-    <div class="contener__second">
-        <section class="contener__task">
-            <span class="contener__task--span">Lista zadań</span>
-            <ul class="contener__task--list js-tasks"></ul>
+        <section class="section">
+            <header class="section__header">Tasks list</span>
+            <ul class="section__list js-tasks"></ul>
         </section>
     </div>
 </body>
