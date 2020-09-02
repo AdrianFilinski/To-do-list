@@ -1,0 +1,30 @@
+.form {
+    padding: 10px;
+    border: 1px solid white;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 20px;
+}
+
+.form__button {
+    background-color: teal;
+    border: none;
+    color: white;
+    padding: 5px;
+}
+
+@media (max-width: 767px) {
+    .form__button {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+.form__button:hover {
+    background-color: rgb(6, 167, 167);
+}
+
+.form__input {
+    max-width: 100%;
+    cursor: pointer;
+}
