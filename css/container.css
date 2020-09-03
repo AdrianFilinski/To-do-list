@@ -1,0 +1,15 @@
+.container {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    padding: 15px;
+    background-color: #eeeeee;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (min-width: 767px) {
+    .container {
+        width: 50%;
+    }
+}
