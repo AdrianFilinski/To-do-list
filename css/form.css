@@ -14,9 +14,9 @@
 }
 
 @media (max-width: 767px) {
-    .form__button {
+    .form {
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: 1fr;
     }
 }
 
